@@ -5,7 +5,7 @@ grunt.loadNpmTasks('grunt-real-favicon');
 
 	realFavicon: {
 		favicons: {
-			src: './img/QVirt_icon.svg',
+			src: './img/QVirt.png',
 			dest: '.',
 			options: {
 				iconsPath: '/',
