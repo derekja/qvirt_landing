@@ -5061,7 +5061,7 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #bbbbbb;
+  background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -5763,12 +5763,16 @@ td.visible-print {
   }
 }
 .modal-content {
-  background-color: #bbbbbb;
+  background-color: #ffffff;
   border-radius: 60px;
 }
 h3,
 .wh {
   color: #fff;
+}
+.img_logo {
+  width: 80%;
+  height: auto;
 }
 .brand1 {
   color: #4baad3;
