@@ -39,3 +39,4 @@ less/bootstrap
 # HTML Validation Files
 #######################
 validation*.json
+w3cerrors

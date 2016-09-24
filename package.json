@@ -18,8 +18,7 @@
       "url": "https://raw.github.com/dstroot/landing-page-example/gh-pages/LICENSE.txt"
     }
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.x",
     "grunt-contrib-clean": "0.5.x",
@@ -29,7 +28,8 @@
     "grunt-contrib-less": "0.11.x",
     "grunt-contrib-uglify": "0.5.x",
     "grunt-contrib-watch": "0.6.x",
-    "grunt-html-validation": "0.1.x",
+    "grunt-real-favicon": "^0.1.7",
+    "grunt-w3c-html-validation": "^0.1.8",
     "load-grunt-tasks": "0.6.x"
   }
 }

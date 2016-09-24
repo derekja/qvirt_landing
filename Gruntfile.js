@@ -1,7 +1,70 @@
 module.exports = function(grunt) {
+grunt.loadNpmTasks('grunt-real-favicon');
 
   grunt.initConfig({
 
+	realFavicon: {
+		favicons: {
+			src: './img/QVirt_icon.svg',
+			dest: '.',
+			options: {
+				iconsPath: '/',
+				html: [ 'index.html' ],
+				design: {
+					ios: {
+						pictureAspect: 'backgroundAndMargin',
+						backgroundColor: '#ffffff',
+						margin: '14%',
+						assets: {
+							ios6AndPriorIcons: false,
+							ios7AndLaterIcons: false,
+							precomposedIcons: false,
+							declareOnlyDefaultIcon: true
+						}
+					},
+					desktopBrowser: {},
+					windows: {
+						pictureAspect: 'noChange',
+						backgroundColor: '#00aba9',
+						onConflict: 'override',
+						assets: {
+							windows80Ie10Tile: false,
+							windows10Ie11EdgeTiles: {
+								small: false,
+								medium: true,
+								big: false,
+								rectangle: false
+							}
+						}
+					},
+					androidChrome: {
+						pictureAspect: 'noChange',
+						themeColor: '#ffffff',
+						manifest: {
+							name: 'qvirt',
+							display: 'standalone',
+							orientation: 'notSet',
+							onConflict: 'override',
+							declared: true
+						},
+						assets: {
+							legacyIcon: false,
+							lowResolutionIcons: false
+						}
+					},
+					safariPinnedTab: {
+						pictureAspect: 'silhouette',
+						themeColor: '#5bbad5'
+					}
+				},
+				settings: {
+					scalingAlgorithm: 'Mitchell',
+					errorOnImageTooSmall: false
+				}
+			}
+		}
+  }
+,
     pkg: grunt.file.readJSON('package.json'),
 
     // Clean-up Task configuration.
@@ -62,9 +125,7 @@ module.exports = function(grunt) {
           //sourceMapFilename: 'css/style.css.map'
         },
         files: {
-          'css/style.css': 'less/style.less',
-          'css/cover.css': 'less/cover.less',
-          'css/svg-draw.css': 'less/svg-draw.less'
+          'css/style.css': 'less/style.less'
         }
       },
       minify: {
@@ -73,9 +134,7 @@ module.exports = function(grunt) {
           report: 'min'
         },
         files: {
-          'css/style.min.css': 'css/style.css',
-          'css/cover.min.css': 'css/cover.css',
-          'css/svg-draw.min.css': 'css/svg-draw.css'
+          'css/style.min.css': 'css/style.css'
         }
       }
     },
