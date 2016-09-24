@@ -29,7 +29,7 @@
       <!-- Styles -->
       <link rel="stylesheet" type="text/css" href="css/style.min.css">
       <!-- Fonts -->
-      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans|Lato|Revalia">
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700italic,900,400italic,300">
       <!-- Favicon -->
@@ -89,7 +89,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a href="http://dstroot.github.io/landing-page-example/" class="navbar-brand"><i class="fa fa-star fa-lg"></i> Awesomesauce!</a>
+                    <a href="http://qvirt.com/" class="navbar-brand"><img src="/img/QVirt_Logo.svg" height="50"/></a>
                 </div>
                 <nav class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -98,19 +98,19 @@
                         </li>
                         <li>
                             <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                            <a class="scroll" href="#features">Features</a>
+                            <a class="scroll" href="#technology">Technology</a>
                         </li>
                         <li>
-                            <a class="" href="cover.html">Components</a>
+                            <a class="" href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="#editModal" data-toggle="modal" data-target="#editModal">Modal</a>
+                            <a class="" href="#partners">Partners</a>
                         </li>
                         <li>
-                          <a href="map.html">About</a>
+                            <a href="#founder">Founder</a>
                         </li>
                         <li>
-                          <a href="different.html">Different Look</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -222,11 +222,34 @@
         </div>
         <!-- Jumbotron Quote
         ======================================== -->
-        <div class="jumbotron gradient-background">
+        <div class="jumbotron gradient-background" id="founder">
+            &nbsp
           <h2>
-            <i class="fa fa-quote-left"></i> Write drunk. Edit sober <i class="fa fa-quote-right"></i>
+            <p><i class=""></i> Meet QVirt founder, Dr. Derek Jacoby<i class=""></i></p>
+            <img src="img/derekja_oval3.png" height="100px"/>
+            <p><small>Derek has experience in statistics, bioinformatics, data science, visualization, virtual reality, speech recognition, user experience, and building great teams </small></p>
+            <p><small>Click on a logo to explore Derek's background</small></p>
           </h2>
-          <h2><small>- Ernest Hemmingway</small></h2>
+          <div class="row">
+                <div class="col-md-4">
+                    <h3 class="wh">Statistical software developer</h3>
+                   <p><a href="#MDAnderson_Modal" data-toggle="modal" data-target="#MDAnderson_Modal"><img src="/img/md_anderson_logo_detail.gif" height="100"/></a></p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-magic fa-lg brand5"></i>  Page speed</h3>
+                    <p>
+                        The theme is optimized to ensure fast loading time by lazy-loading of images and beeing minimal by design.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-tablet fa-lg brand5"></i>  For every device</h3>
+                    <p>
+                        The Story is built to look great on every device. Custom menu for mobile devices, to ensure the best expierence.
+                    </p>
+                </div>
+            </div>
+          
+          <h2><small></small></h2>
         </div>
         <!-- Featurettes
         ======================================== -->
@@ -261,7 +284,7 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
+            <div class="row" id="contact">
                 <div class="col-sm-7">
                     <h1>
                         And lastly, this one. <span class="text-muted">Checkmate.</span>
@@ -275,9 +298,11 @@
                 </div>
             </div>
         </div>
-        <!-- Modal
+  
+
+      <!-- Modals
         ======================================== -->
-        <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="MDAnderson_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -285,7 +310,7 @@
                 <h4 class="modal-title" id="myModalLabel">Add/Edit Bookmark</h4>
               </div>
               <div class="modal-body">
-                <form class="form-horizontal">
+                <form class="form-horizontal" role="form">
                   <div class="form-group">
                     <div class="col-sm-12">
                       <input class="form-control" type="text" name="url" value="{{url}}">
@@ -313,12 +338,14 @@
               <div class="modal-footer">
                 <!-- <button type="reset" class="btn cancel">Cancel</button> -->
                 <!-- <button type="submit" class="btn btn-primary save">Save Changes</button> -->
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+
+
+
         <!-- Footer
         ======================================== -->
         <footer class="footer">
