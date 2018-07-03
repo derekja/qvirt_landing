@@ -1,642 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <!-- Design from here: http://prettystrap.com/themes/the-story/preview/ -->
-      <!-- Behavioral Meta Data -->
-      <!-- https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- SEO Meta Data -->
-      <title>QVirt</title>
-      <meta name="author" content="Derek Jacoby">
-      <meta name="description" content="A landing page for QVirt Labs, inc">
-      <meta name="keywords" content="VR, 3D, analytics, virtual reality, speech recognition, machine learning">
-      <!-- Open Graph Meta Data -->
-      <meta property="og:description" content="QVirt technology powers virtual worlds to explore data analytics through speech recognition and natural language.">
-      <meta property="og:site_name" content="QVirt.com">
-      <meta property="og:title" content="Answering Questions in VIRTual reality!">
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="http://qvirt.com/index.html">
-      <!-- Twitter Card Meta Data -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="http://qvirt.com/index.html">
-      <meta name="twitter:creator" content="@derekja">
-      <meta name="twitter:title" content="Answering Questions in VIRTual reality!">
-      <meta name="twitter:description" content="QVirt technology powers virtual worlds to explore data analytics through speech recognition and natural language.">
-      <meta name="twitter:image" content="http://qvirt.com/img/QVirt_Logo.svg">
-      <!-- Styles -->
-      <link rel="stylesheet" type="text/css" href="css/style.min.css">
-      <!-- Fonts -->
-      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans|Lato|Revalia">
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700italic,900,400italic,300">
-      <!-- Favicon -->
-      <!-- Apple Touch Icons -->
-      <!-- !!!! These sizes are wrong -->
-      <!-- Apple Startup Images -->
-<!--       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)">
+
+<head>
+    <!-- Design from here: http://prettystrap.com/themes/the-story/preview/ -->
+    <!-- Behavioral Meta Data -->
+    <!-- https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Data -->
+    <title>QVirt</title>
+    <meta name="author" content="Derek Jacoby">
+    <meta name="description" content="A landing page for QVirt Labs, inc">
+    <meta name="keywords" content="VR, 3D, analytics, virtual reality, speech recognition, machine learning">
+    <!-- Open Graph Meta Data -->
+    <meta property="og:description" content="QVirt technology powers virtual worlds to explore data analytics through speech recognition and natural language.">
+    <meta property="og:site_name" content="QVirt.com">
+    <meta property="og:title" content="Answering Questions in VIRTual reality!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://qvirt.com/index.html">
+    <!-- Twitter Card Meta Data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="http://qvirt.com/index.html">
+    <meta name="twitter:creator" content="@derekja">
+    <meta name="twitter:title" content="Answering Questions in VIRTual reality!">
+    <meta name="twitter:description" content="QVirt technology powers virtual worlds to explore data analytics through speech recognition and natural language.">
+    <meta name="twitter:image" content="http://qvirt.com/img/QVirt_Logo.svg">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans|Lato|Revalia">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700italic,900,400italic,300">
+    <!-- Favicon -->
+    <!-- Apple Touch Icons -->
+    <!-- !!!! These sizes are wrong -->
+    <!-- Apple Startup Images -->
+    <!--       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)">
       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-2048x1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"> -->
-      <!-- Google Analytics -->
-      <script>
-      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      // ga('create', 'UA-39594063-4', 'wagerfield.github.io');
-      // ga('send', 'pageview');
-      </script>
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-<link rel="mask-icon" href="/safari-pinned-tab.svg">
-<link rel="mask-icon" href="/safari-pinned-tab.svg">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="theme-color" content="#ffffff"></head>
-    <!-- activate scrollspy -->
-    <body id="top" data-spy="scroll" data-target=".navbar" data-offset="70">
-        <!-- Navigation
+    <!-- Google Analytics -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-84807726-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<!-- activate scrollspy -->
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Navigation
         ======================================== -->
-        <div id="searchDropdown" class="search-drop hidden">
-          <form action="/Guide/Search" method="get" class="ignoreCSRF">
+    <div id="searchDropdown" class="search-drop hidden">
+        <form action="/Guide/Search" method="get" class="ignoreCSRF">
             <div class="header-container">
-              <span class="search-title">Search iFixit:</span>
-              <input type="text" name="query" id="searchForm" class="search-field" placeholder="Enter keywords" spellcheck="false">
-              <button class="search-submit" id="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
-              <i class="search-close search-toggle fa fa-times"></i>
+                <span class="search-title">Search iFixit:</span>
+                <input type="text" name="query" id="searchForm" class="search-field" placeholder="Enter keywords" spellcheck="false">
+                <button class="search-submit" id="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
+                <i class="search-close search-toggle fa fa-times"></i>
             </div>
-          </form>
-          <!-- <button type="button" class="close" aria-hidden="true">&times;</button> -->
-        </div>
-        <header class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        </form>
+        <!-- <button type="button" class="close" aria-hidden="true">&times;</button> -->
+    </div>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a href="http://qvirt.com/" class="navbar-brand"><img src="/img/QVirt_Logo.svg" alt="QVirt logo" height="50"/></a>
-                </div>
-                <nav class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
-                            <a class="scroll" href="#top">Home</a>
-                        </li>
-                        <li>
-                            <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                            <a class="scroll" href="#technology">Technology</a>
-                        </li>
-                        <li>
-                            <a class="" href="#projects">Projects</a>
-                        </li>
-                        <li>
-                            <a class="" href="#partners">Partners</a>
-                        </li>
-                        <li>
-                            <a href="#founder">Founder</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <a href="http://qvirt.com/" class="navbar-brand"><img src="/img/QVirt_Logo.svg" alt="QVirt logo" height="50" /></a>
             </div>
-        </header>
-        <!-- Main Jumbotron
+            <nav class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a class="scroll" href="#top">Home</a>
+                    </li>
+                    <li>
+                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
+                        <a class="scroll" href="#technology">Technology</a>
+                    </li>
+                    <li>
+                        <a class="" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="" href="#partners">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#founder">Founder</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Jumbotron
         ======================================== -->
-        <div id="home" class="jumbotron">
-            <div class="container">
-                &nbsp;
-                <h1>
-                    Tell the Awesome Story!
-                </h1>
-                <div class="row">
-                    <div class="col-md-8 col-md-push-4">
-                        <img class="img-responsive animated slideInRight" alt="Looks great on every device" src="img/home.png">
-                        <br>
-                    </div>
-                    <div class="col-md-offset-1 col-md-3 col-md-pull-8">
-                      <ul class="fa-ul visible-md visible-lg">
-                          <li><i class="fa fa-li fa-cog"></i>Flat design</li>
-                          <li><i class="fa fa-li fa-heart"></i>Responsive</li>
-                          <li><i class="fa fa-li fa-cloud"></i>Bootstrap 3</li>
-                          <li><i class="fa fa-li fa-magic"></i>Built with LESS</li>
-                      </ul>
-                      <p>
-                          <a class="btn btn-primary btn-lg" role="button">Learn More <i class="fa fa-chevron-right"></i></a>&nbsp;<a class="btn btn-default btn-lg" role="button">Sign In <i class="fa fa-chevron-right"></i></a>
-                      </p>
-                    </div>
+    <div id="home" class="jumbotron">
+        <div class="container">
+            &nbsp;
+            <h1>
+                We allow you to ask <span id="Q">Q</span>uestions in <span id="Q">Virt</span>ual reality using natural language and speech recognition!
+            </h1>
+            <div class="row">
+                <div class="col-md-8 col-md-push-4">
+                    <img class="img-responsive animated slideInRight" alt="Looks great on every device" src="img/plaidVR.png">
+                    <br>
+                </div>
+                <div class="col-md-offset-1 col-md-3 col-md-pull-8">
+                    <ul class="fa-ul visible-md visible-lg">
+                        <li><i class="fa fa-li fa-bullhorn"></i>Engaging</li>
+                        <li><i class="fa fa-li fa-heart"></i>Natural</li>
+                        <li><i class="fa fa-li fa-users"></i>Collaborative</li>
+                        <li><i class="fa fa-li fa-magic"></i>Intelligent assistance</li>
+                    </ul>
+
                 </div>
             </div>
         </div>
-        <!-- Hero
+    </div>
+    <!-- Hero
         ======================================== -->
-        <!-- <div class="container"> -->
-          <div class="hero">
-            <div class="hero-inner">
+    <!-- <div class="container"> -->
+    <div class="container" id="technology">
+        &nbsp; &nbsp;
+        <h1> Our Technology </h1>
+    </div>
+    <div class="hero">
+        <div class="hero-inner">
             <!-- hero image -->
-            <img class="hero-image" src="img/feature_sm.png" alt="Emilia">
+            <img class="hero-image" src="img/servers.png" alt="Data center">
             <!-- hero content -->
             <div class="hero-content">
                 <h2>
-                    Emilia Johnson
+                    Cloud-based interactivity
                 </h2>
-                <p>
-                    Hi, I'm Emilia, a freelance designer based on Paris. Specialist on web design and UI concepts.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="#profile">Find Out More <i class="fa fa-chevron-right"></i></a>
-                </p>
-            </div>
-            </div>
-          </div>
-        <!-- </div> -->
-        <!-- Jumbotron
-        ======================================== -->
-        <div class="jumbotron">
-            <div class="container">
-                <h1>
-                    Hello Everyone!
-                </h1>
-                <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-lg" role="button">Learn more <i class="fa fa-chevron-right"></i></a>
-                </p>
+                <h3 class="wh">
+                    Speech recognition and natural language services, deep learning feature extraction, smart collaboration services are all cloud-based
+                </h3>
+                <h2> Rich client behaviours </h2>
+                <h3 class="wh">
+                    Unity game engine on the client enables head and hand tracking, presentation on multiple client platforms, and all the richness of a gaming application
+                </h3>
+
             </div>
         </div>
-        <!-- Hubspot
+    </div>
+    <!-- </div> -->
+    <!-- Jumbotron
         ======================================== -->
+    <div class="jumbotron" id="projects">
         <div class="container">
-          <div class="share-buttons">
-            <div class="share-button twitter-share-button">
-              <iframe src="http://hubstar.io/twitter/spin?via=HubSpotDev&amp;hashtags=YMNNJQ&amp;text=You%20might%20not%20need%20jQuery&amp;url=http://YouMightNotNeedjQuery.com&amp;name=%22You%20might%20not%20need%20jQuery%22"></iframe>
-            </div>
-            <div class="share-button github-stars-button">
-              <iframe src="http://hubstar.io/github/spin/HubSpot/YouMightNotNeedjQuery"></iframe>
-            </div>
-          </div>
-        </div>
-        <!-- Marketing Section
-        ======================================== -->
-        <div class="container marketing hidden-xs">
+            &nbsp; &nbsp;
+            <h1>
+                We keep adding projects!
+            </h1>
+            <p>
+                The underlying technology is applicable to so many uses. The gaming industry is producing tools to make user interfaces exciting and interactive, and the potential to apply these interfaces to scientific data sets, research collaborations, and social
+                environments are the dawn of a new age in human-computer interfaces.
+            </p>
+            <p> Our current projects are listed below </p>
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Why choose Awesomesauce?</h1>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a target="_blank" href="http://3data.ca">
+                        <h3 class="wh">3data.com, Virtual Worlds for Data Analysis</h3>
+                        <img class="img_logo" alt="vwda" src="/img/vwda.png" /></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a target="_blank" href="http://bcstories.ca">
+                        <h3 class="wh">BC Stories is a collaboration with the Royal BC Museum on educational VR experiences</h3>
+                        <img class="img_logo" alt="BC Stories" src="/img/bcstories.png" /></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#makerslounge_Modal" data-toggle="modal" data-target="#makerslounge_Modal">
+                        <h3 class="wh">Maker's Lounge</h3>
+                        <img class="img_logo" alt="Microsoft Windows logo" src="/img/makerslounge.png" /></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>  Make it your own</h3>
-                    <p>
-                        Easily change every color, by changing just few variables. Add or remove pages, and choose from 600+ fonts.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h3><i class="fa fa-magic fa-lg brand5"></i>  Page speed</h3>
-                    <p>
-                        The theme is optimized to ensure fast loading time by lazy-loading of images and beeing minimal by design.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h3><i class="fa fa-tablet fa-lg brand5"></i>  For every device</h3>
-                    <p>
-                        The Story is built to look great on every device. Custom menu for mobile devices, to ensure the best expierence.
-                    </p>
-                </div>
+            &nbsp; &nbsp;
+        </div>
+    </div>
+    <!-- Partners
+        ======================================== -->
+    <div class="container" id="partners">
+        &nbsp; &nbsp;
+        <h3> Our partners are the best in the world! From core technologies, to interesting problem areas, to deep academic knowledge.</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Our partners</h1>
             </div>
         </div>
-        <!-- Jumbotron Quote
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>NVidia Corporation</h3>
+                <p>
+                    The world leader in graphics and GPU technology. NVidia supplies our deep learning hardware and the graphics cards needed on the client PCs.
+                </p>
+                <img class="img_logo" src="img/nvidia-logo.jpg" alt="nvidia" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>Unity</h3>
+                <p>
+                    The Unity gaming engine is a flexible, extensible resource to create engaging content for a wide variety of platforms.
+                </p>
+                <img class="img_logo" src="img/unity-logo.png" alt="unity" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>IBM</h3>
+                <p>
+                    IBM Watson cloud services provide speech recognition and natural language capabilities to the platform.
+                </p>
+                <img class="img_logo" src="img/ibm_watson.png" alt="ibm" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>Compute Canada</h3>
+                <p>
+                    Compute Canada provides performant, scalable server resources to host the world servers, deep learning cluster for feature extraction, and to provide storage.
+                </p>
+                <img class="img_logo" src="img/CC-LOGO.png" alt="compute canada" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>University of Victoria: the Mod Squad</h3>
+                <p>
+                    The Modularity Squad, led by Dr. Yvonne Coady, are experts in scalability and containerization of network architectures.
+                </p>
+                <img class="img_logo" src="img/modsquadlogo.jpg" alt="Modularity Squad" />
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                <h3><i class="fa fa-thumbs-o-up fa-lg brand5"></i>Victoria Makerspace</h3>
+                <p>
+                    The Victoria Makerspace is home to over 150 makers and technology enthusiasts who form the base of our army of testers and a valuable brainstorming resource.
+                </p>
+                <img class="img_logo" src="img/makerspace.png" alt="Victoria Makerspace" />
+            </div>
+        </div>
+        <p> </p>
+        &nbsp; &nbsp;
+    </div>
+    <!-- Jumbotron Quote
         ======================================== -->
-        <div class="jumbotron gradient-background" id="founder">
-            &nbsp;
-          <h2>
+    <div class="jumbotron gradient-background" id="founder">
+        &nbsp;
+        <h2>
             <p><i class=""></i> Meet QVirt founder, Dr. Derek Jacoby<i class=""></i></p>
-            <img src="img/derekja_oval3.png" alt="Derek Jacoby" height="100px"/>
+            <img src="img/derekja_oval3.png" alt="Derek Jacoby" height="100px" />
             <p><small>Derek has experience in statistics, bioinformatics, data science, visualization, virtual reality, speech recognition, user experience, and building great teams </small></p>
             <p><small>Click on a logo to explore Derek's background</small></p>
-          </h2>
+        </h2>
         <div class="container marketing hidden-xs">
-          <div class="row">
+            <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Statistical software developer</h3>
-                   <p><a href="#MDAnderson_Modal" data-toggle="modal" data-target="#MDAnderson_Modal"><img class="img_logo" alt="MD Anderson logo" src="/img/md_anderson_logo_detail.gif"/></a></p>
+                    <a href="#MDAnderson_Modal" data-toggle="modal" data-target="#MDAnderson_Modal">
+                        <h3 class="wh">Statistical software developer</h3>
+                        <img class="img_logo" alt="MD Anderson logo" src="/img/md_anderson_logo_detail.gif" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Usability specialist</h3>
-                   <p><a href="#compaq_Modal" data-toggle="modal" data-target="#compaq_Modal"><img class="img_logo" alt="Compaq logo" src="/img/Compaq.png"/></a></p>
+                    <a href="#compaq_Modal" data-toggle="modal" data-target="#compaq_Modal">
+                        <h3 class="wh">Usability specialist</h3>
+                        <img class="img_logo" alt="Compaq logo" src="/img/Compaq.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Lead program manager</h3>
-                   <p><a href="#mswindows_Modal" data-toggle="modal" data-target="#mswindows_Modal"><img class="img_logo" alt="Microsoft Windows logo" src="/img/ms_windows.png"/></a></p>
+                    <a href="#mswindows_Modal" data-toggle="modal" data-target="#mswindows_Modal">
+                        <h3 class="wh">Lead program manager</h3>
+                        <img class="img_logo" alt="Microsoft Windows logo" src="/img/ms_windows.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Speech recognition researcher</h3>
-                        <p><a href="#msr_Modal" data-toggle="modal" data-target="#msr_Modal"><img class="img_logo" alt="Microsoft research logo" src="/img/msr.png"/></a></p>
+                    <a href="#msr_Modal" data-toggle="modal" data-target="#msr_Modal">
+                        <h3 class="wh">Speech recognition researcher</h3>
+                        <img class="img_logo" alt="Microsoft research logo" src="/img/msr.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Speech Server SDK team lead</h3>
-                   <p><a href="#ms_Modal" data-toggle="modal" data-target="#ms_Modal"><img class="img_logo" alt="Microsoft logo" src="/img/ms_logo.png"/></a></p>
+                    <a href="#ms_Modal" data-toggle="modal" data-target="#ms_Modal">
+                        <h3 class="wh">Speech Server SDK team lead</h3>
+                        <img class="img_logo" alt="Microsoft logo" src="/img/ms_logo.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Masters: collaborative meeting annotations</h3>
-                   <p><a href="#masters_Modal" data-toggle="modal" data-target="#masters_Modal"><img class="img_logo" alt="visid logo" src="/img/visid.png"/></a></p>
+                    <a href="#masters_Modal" data-toggle="modal" data-target="#masters_Modal">
+                        <h3 class="wh">Masters: collaborative meeting annotations</h3>
+                        <img class="img_logo" alt="visid logo" src="/img/visid.png" /></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Founder and executive director</h3>
-                   <p><a href="#makerspace_Modal" data-toggle="modal" data-target="#makerspace_Modal"><img class="img_logo" alt="makerspace logo" src="/img/makerspace_white.png"/></a></p>
+                    <a href="#makerspace_Modal" data-toggle="modal" data-target="#makerspace_Modal">
+                        <h3 class="wh">Founder and executive director</h3>
+                        <img class="img_logo" alt="makerspace logo" src="/img/makerspace_white.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Founder</h3>
-                   <p><a href="#biobit_Modal" data-toggle="modal" data-target="#biobit_Modal"><img class="img_logo" alt="biobit logo" src="/img/biobit.png"/></a></p>
+                    <a href="#biobit_Modal" data-toggle="modal" data-target="#biobit_Modal">
+                        <h3 class="wh">Founder</h3>
+                        <img class="img_logo" alt="biobit logo" src="/img/biobit.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Biotech instructor</h3>
-                   <p><a href="#su_Modal" data-toggle="modal" data-target="#su_Modal"><img class="img_logo" alt="singularity university logo" src="/img/SU.png"/></a></p>
+                    <a href="#su_Modal" data-toggle="modal" data-target="#su_Modal">
+                        <h3 class="wh">Biotech instructor</h3>
+                        <img class="img_logo" alt="singularity university logo" src="/img/SU.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">PhD: EEG neuro feedback</h3>
-                   <p><a href="#phd_Modal" data-toggle="modal" data-target="#phd_Modal"><img class="img_logo" alt="uvic logo" src="/img/uviclogo.png"/></a></p>
+                    <a href="#phd_Modal" data-toggle="modal" data-target="#phd_Modal">
+                        <h3 class="wh">PhD: EEG neuro feedback</h3>
+                        <img class="img_logo" alt="uvic logo" src="/img/uviclogo.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Web developer</h3>
-                   <p><a href="#urthecast_Modal" data-toggle="modal" data-target="#urthecast_Modal"><img class="img_logo" alt="urthecast logo" src="/img/urthecast.png"/></a></p>
+                    <a href="#urthecast_Modal" data-toggle="modal" data-target="#urthecast_Modal">
+                        <h3 class="wh">Web developer, VR development</h3>
+                        <img class="img_logo" alt="urthecast logo" src="/img/urthecast.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <h3 class="wh">Sessional lecturer</h3>
-                   <p><a href="#sessional_Modal" data-toggle="modal" data-target="#sessional_Modal"><img class="img_logo" alt="uvic logo" src="/img/uviclogo.png"/></a></p>
+                    <a href="#sessional_Modal" data-toggle="modal" data-target="#sessional_Modal">
+                        <h3 class="wh">Sessional lecturer</h3>
+                        <img class="img_logo" alt="uvic logo" src="/img/uviclogo.png" /></a>
                 </div>
             </div>
-          
-          <h2><small></small></h2>
+
+            <h2><small></small></h2>
         </div>
-        </div>
-        <!-- Featurettes
+    </div>
+    <!-- Featurettes
         ======================================== -->
-        <!-- Internal Anchor with CSS to account for fixed navigation header -->
-        <a id="features" class="anchor invisible"></a>
-        <div class="container featurette">
-            <div class="row">
-                <div class="col-sm-7">
-                    <h1>
-                        First featurette heading. <span class="text-muted">It'll blow your mind.</span>
-                    </h1>
-                    <p class="lead hidden-xs">
-                        Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                    </p>
-                </div>
-                <div class="col-sm-5">
-                    <img class="img-rounded img-responsive pull-right" src="img/coffee.gif" alt="Generic placeholder image">
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-sm-7 col-sm-push-5">
-                    <h1>
-                        Oh yeah, it's that good. <span class="text-muted">See for yourself.</span>
-                    </h1>
-                    <p class="lead hidden-xs">
-                        Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                    </p>
-                </div>
-                <div class="col-sm-5 col-sm-pull-7">
-                    <img class="img-rounded img-responsive" src="img/coffee.gif" alt="Generic placeholder image">
-                </div>
-            </div>
-            <hr>
-            <div class="row" id="contact">
-                <div class="col-sm-7">
-                    <h1>
-                        And lastly, this one. <span class="text-muted">Checkmate.</span>
-                    </h1>
-                    <p class="lead hidden-xs">
-                        Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                    </p>
-                </div>
-                <div class="col-sm-5">
-                    <img class="img-rounded img-responsive pull-right" src="img/coffee.gif" alt="Generic placeholder image">
-                </div>
-            </div>
-        </div>
-  
-
-      <!-- Modals
-        ======================================== -->
-        <div class="modal fade" id="MDAnderson_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">MD Anderson and Rice University</h4>
-              </div>
-              <div class="modal-body">
-                <p> While pursuing a bachelor's degree in psychology at Rice University, Derek worked part-time at MD Anderson Cancer Center in the biostatistics department. Derek's role was to design and develop software for clinicians to assess endpoints in clinical cancer trials based on Bayesian monitoring criteria. This was done under the direction of Dr. Peter Thall. Other statistical challenges included estimation of error rates in fluorescent in-situ hybridization studies, for which Derek received publication credit in the British Journal of Statistics. At Rice, publications in eyewitness testimony and memory were also obtained.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="compaq_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Compaq Computer Corporation</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="mswindows_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Microsoft Windows</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="msr_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Microsoft Research</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="ms_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Microsoft Speech Server</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="masters_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Master's degree: Collaborative and Automatic Annotations on Meeting Recordings</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="makerspace_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Victoria Makerspace</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="biobit_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Biobit Enterprises</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="su_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Singularity University - student and biotech instructor</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="modal fade" id="phd_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">PhD: neurofeedback on low-cost EEG devices</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="modal fade" id="urthecast_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Web developer at UrtheCast</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-                <div class="modal fade" id="sessional_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Sessional Instructor</h4>
-              </div>
-              <div class="modal-body">
-                <p>  As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot, which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft Taz telephony server.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Footer
-        ======================================== -->
-        <footer class="footer">
-            <div class="container">
-              <ul class="list-unstyled list-inline">
-                <li>
-                  <a href="http://blog.yourkarma.com"><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Blog</a>
-                </li>
-                <li>&middot;</li>
-                <li>
-                  <a href="http://twitter.com/#!/yourkarma" target="_blank" class="txta txta-twitter"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
-                </li>
-                <li>&middot;</li>
-                <li>
-                  <a href="https://www.facebook.com/getyourkarma" target="_blank" class="txta txta-facebook"><i class="fa fa-facebook"></i>&nbsp;&nbsp;Facebook</a>
-                </li>
-              </ul>
-                <!-- <ul class="list-unstyled list-inline">
-                    <li class="hidden-xs center-block">
-                        <h4>
-                            Help
-                        </h4>
-                        <ul class='fa-ul'>
-                            <li>
-                                <i class="fa fa-li fa-road"></i><a href="/tour">Tour</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-li fa-rocket"></i><a href="/start">Get Started</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-li fa-h-square"></i><a href="/help">Help Center</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class='center-block'>
-                        <h4 class='hidden-xs'>
-                            About
-                        </h4>
-                        <ul class='fa-ul'>
-                            <li>
-                                <i class="fa fa-li fa-bullhorn"></i><a href="http://blog.yourkarma.com">Blog</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-li fa-book"></i><a href="/privacy">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-li fa-book"></i><a href="/terms">Terms of Service</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hidden-xs center-block">
-                        <h4>Connect</h4>
-                        <ul class='fa-ul'>
-                            <li>
-                                <i class="fa-li fa fa-twitter"></i><a href="http://twitter.com/#!/yourkarma" target="_blank" class="txta txta-twitter">Twitter</a>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-facebook"></i><a href="https://www.facebook.com/getyourkarma" target="_blank" class="txta txta-facebook">Facebook</a>
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-envelope"></i><a href="/contact">Contact Us</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul> -->
-                <p>
-                    <small>Copyright © 2013 <i class="fa fa-star"></i> Awesomesauce, all rights reserved. | <a href="http://www.livefyre.com/privacy/" title="Privacy Policy" onclick="_gaq.push(['_trackEvent', 'footer', 'click', 'footer_privacyPolicy']);">Privacy Policy</a> | <a href="http://www.livefyre.com/terms/" title="Terms of Use" onclick="_gaq.push(['_trackEvent', 'footer', 'click', 'footer_termsofUse']);">Terms of Use</a></small>
+    <!-- Internal Anchor with CSS to account for fixed navigation header -->
+    <a id="features" class="anchor invisible"></a>
+    <div class="container featurette">
+        <div class="row">
+            <div class="col-sm-7">
+                <h1>
+                    Intelligent, natural analytics. <span class="text-muted">It'll blow your mind.</span>
+                </h1>
+                <p class="lead hidden-xs">
+                    Remember the days when data analysis required an expert writing code? We're entering the age where you can interact with your data sets with all of the ease of the natural world, but a natural world in which we're all wizards. When was the last time you
+                    reached down and pulled a mountain out of the earth? Or wiped your hand across an ocean to clear a data set from a hundred sensors. In virtual reality, all the benefits of the real world exist, but the limitations don't apply!
                 </p>
             </div>
-        </footer>
-        <!-- Scripts
+            <div class="col-sm-5">
+                <img class="img-rounded img-responsive pull-right" src="img/map.png" alt="Generic placeholder image">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-7 col-sm-push-5">
+                <h1>
+                    You can enter this world with all your friends! <span class="text-muted">As naturally as meeting in your living room.</span>
+                </h1>
+                <p class="lead hidden-xs">
+                    Speech recognition allows the system to understand you, but there's nothing preventing you from just talking naturally to the other humans in your virtual world. But it is a virtual world, so you are in control of what your friends see and hear. From
+                    facilitated meetings to the hottest social interactions, we can do anything we can imagine, and be anyone we want to!
+                </p>
+            </div>
+            <div class="col-sm-5 col-sm-pull-7">
+                <img class="img-rounded img-responsive" src="img/minds.png" alt="Generic placeholder image">
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="contact">
+            <div class="col-sm-7">
+                <h1>
+                    So get in touch! <span class="text-muted">What do you want to do with a world re-imagined?</span>
+                </h1>
+                <p class="lead hidden-xs">
+                    Email Derek directly at derekja@qvirt.com
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <img class="img-rounded img-responsive pull-right" src="img/derekja.png" alt="Generic placeholder image">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modals
         ======================================== -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- To collapse the Nav on the mobile view after a click -->
-        <script type="text/javascript">
-          $('.navbar-collapse a').click(function () {
-            if ($( 'nav' ).hasClass( 'in' )) $('.navbar-collapse').collapse('toggle');
-          });
-        </script>
-        <!-- toTop function -->
-        <script>
-          $(document).ready(function() {
+
+    <div class="modal fade" id="makerslounge_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel0" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel0">Maker's Lounge</h4>
+                </div>
+                <div class="modal-body">
+                    <p> The Maker's Lounge is envisioned as a place where members of the global Makerspace community can share their projects and creations, and socialize. The <a target="_blank" href="http://store.steampowered.com/app/457550/">BigScreen application</a>                        is serving part of this role today, but is a general purpose application without any of the Makerspace-specific functionality that this community desires. This project is in the requirements-gathering phase.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="MDAnderson_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">MD Anderson and Rice University</h4>
+                </div>
+                <div class="modal-body">
+                    <p> While pursuing a bachelor's degree in psychology at Rice University, Derek worked part-time at MD Anderson Cancer Center in the biostatistics department. Derek's role was to design and develop software for clinicians to assess endpoints
+                        in clinical cancer trials based on Bayesian monitoring criteria. This was done under the direction of Dr. Peter Thall. Other statistical challenges included estimation of error rates in fluorescent in-situ hybridization studies,
+                        for which Derek received publication credit in the British Journal of Statistics. At Rice, publications in eyewitness testimony and memory were also obtained.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="compaq_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel1">Compaq Computer Corporation</h4>
+                </div>
+                <div class="modal-body">
+                    <p> As an intern while at Rice, and following graduation, Derek worked at Compaq Computer Corporation. Initially in the human factors department, where his primary role was the development of a consumer-focused product called MediaPilot,
+                        which was the first comprehensive suite of multi-media editing and playback tools to ship on a consumer PC. Following this, Derek moved to the communications group at Compaq and shipped telephony hardware to support the Microsoft
+                        Taz telephony server.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mswindows_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel2">Microsoft Windows</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Derek moved to Seattle to join Microsoft, initially in a usability engineering role on Systems Management Server, a platform for system administrators to manage networks and servers. In this role, Derek ran a long-term field study
+                        of network administrators which was central to understanding their mental models and needs. This experience supported a move to the Windows team where Derek was the first program manager, and eventually lead program manager, on
+                        a product called the Microsoft Management Console (MMC). This was an integrated shell to hold the administration tools for windows server and the BackOffice suite of products such as SQL server, Internet Information Server, Exchange
+                        Server, and others. At the height of MMC's adoption there were over 50 client groups using the shell and Derek was responsible for the project as a whole in a managerial capacity - and the development of SDK samples, a Microsoft
+                        Press book, and numerous development talks in an individual contibutor role. MMC still ships in Windows 10.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="msr_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel3">Microsoft Research</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Wanting to get back into research, Derek joined the Microsoft Research Speech Technology team to lead a project called MiPad, or Multimodal Interactive Notepad. This project was focused on speech recognition on handheld devices, but
+                        in a period prior to the processing power on those devices being capable of running the speech recognition process locally. Some local processing enabled compression of the data to be sent over the network to servers to do the
+                        speech-to-text and natural language understanding. Although the product was many years away from release to consumers, it formed a central part of the product strategy vision and Derek presented demos in Senior VP Craig Mundie's
+                        vision presentations and during Bill Gate's keynote address to the joint conferences on artificial intelligence, among other high profile PR and corporate strategy venues.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ms_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel4">Microsoft Speech Server</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Shipping software to customers has always been a serious motivating factor for Derek, and when the speech research group divided into a research arm and a new product team, Derek returned to the product groups to work on Microsoft
+                        Speech Server. This platform for doing large-scale speech recognition was aimed primarily at telephony and support center uses. Specifically, Derek ran the SDK team. Although throughout his Microsoft career Derek managed between
+                        2 and 4 direct reports, it is during this period where Derek's team grew to support a larger project and at the peak of the effort Derek managed a team of 20 developers, testers, and designers who were delivering the software development
+                        kit for the speech server and designing the user interface for the product. As the speech server neared shipping, the team moved out of the Natural User Interface division and back into Windows and Derek took on an individual contributor
+                        project to create the "How-Do-I" language model. This was derived from typed text data, modified algorithmically to adapt to spoken language patterns, and shipped with windows so that users could request help on operating system
+                        features using spoken natural language queries.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="masters_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel5">Master's degree: Collaborative and Automatic Annotations on Meeting Recordings</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Derek left Microsoft to return to Canada, specifically to pursue graduate work at the University of Victoria (UVic). The interest in speech recognition and computer-mediated interpersonal dynamics led to a master's thesis topic of
+                        <a target="_blank" href="https://dspace.library.uvic.ca/handle/1828/3155">Collaborative and Automatic Annotations to Meetings</a>. In this project, Derek used both automatic speech recognition and iClickers (a student annotation
+                        device used primarily for in-class quizes) to annotate a class record with important points. This was developed in C# and Microsoft Silverlight as a web application. User studies showed that these annotations were able to significantly
+                        increase the value of class recordings to subsequent information extraction tasks.</p>
+                    <p> During this time Derek also developed a deep interest in biology, specifically the emerging field of synthetic biology. Taking many undergraduate courses in microbiolgy, genetics, and bioinformatics laid an academic framework, but
+                        the most exciting applications of the field lay in practical applications. Derek founded the first iGEM team at UVic. iGEM, international Genetically Engineered Machines, is a yearly synthetic biology competition sponsored by MIT.
+                        The UVic team took a silver medal in this competition for the creation and characterization of a bacterial thermometer.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="makerspace_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel6">Victoria Makerspace</h4>
+                </div>
+                <div class="modal-body">
+                    <p> During his time at Microsoft, Derek built a house. A 3500 square foot geodesic dome for which he acted as general contractor and carpenter. The woodworking was interesting enough that after leaving Microsoft Derek attended the Northwest
+                        school of wooden boatbuilding to learn how to build a mast and replace planks on his 1951 William Garden designed pinky schooner. As he was settling into Victoria, Derek's woodworking and mechanical hobbies, not to mention a growing
+                        accumulation of biology gear, began to overwhelm his garage. At the same time, the lack of a cohesive technically-oriented social network was a growing concern. Unlike the vast tech community in Seattle or the San Francisco Bay
+                        area, Victoria was lacking social opportunities.</p>
+                    <p>The solution was to found a Makerspace. This is a community-organized non-profit workshop which provides workshop space, classes, and social opportunities to its members. The Victoria Makerspace began as a modest affair in 600 square
+                        feet of outbuilding in a farmer's field, but by today has grown to 150 members and over 4000 square feet of workshop space in the Vancouver Island Technology Park.</p>
+                    <p> Under Derek's leadership as executive director, members have built out metal shops for welding, sheet metal work, and milling and metal lathes. A woodworking shop. An electronics shop. A molecular biology lab, Canada's first community
+                        biology lab in fact, which Derek has gone to Ottawa to represent to Health Canada as a growing trend of interest in science education. Makerspace has two laser cutters, three 3D printers, a green screen recording studio with music
+                        and filmmaking gear, a computer classroom, and an ever-growing virtual reality lab. The Victoria Makerspace has received national and local press and television coverage, seen the formation of numerous inventions and small businesses
+                        growing out of the space, and are in a comfortable partnership with the University of Victoria.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="biobit_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel7">Biobit Enterprises</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Although the Makerspace biology lab is a good teaching lab, Derek's molecular and synthetic biology aspirations required a more comprehensive space. He founded a scientific consultancy company called Biobit enterprises and fitted out
+                        a lab next to Makerspace. This lab is designed as a biosafety level 2 facility, meaning that it is capable of handling infectious materials when certified to do so by Health Canada, and contains microscopy facilities, microbiology
+                        facilities for the culture and analysis of bacteria, yeast, and algae. Culture facilities for plants and worms. Genetic analysis facilities including quantitative polymerase chain reaction equipment (qPCR) and next-generation sequencing
+                        equipment from Illumina. And chemistry and protein analysis gear, including nano-particle production and purification capabilities. An early effort to engage in micro-fluidic processing gear is also underway in collaboration with
+                        other Makerspace members.</p>
+                    <p> Although the commercial activities of Biobit have ebbed and flowed with the time-pressures of Makerspace and UVic activities, the focus on biotechnology afforded by a dedicated space has allowed Derek to be a regular contributor to
+                        biotech publications such as <a target="_blank" href="http://www.oreilly.com/biocoder/">BioCoder</a>, and to pursue longer term development projects. Derek gave a <a target="_blank" href="https://www.youtube.com/watch?v=TkrMbW6eL0U">TEDxVictoria</a>                        talk on the importance of focusing on biotechnology.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="su_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel8">Singularity University - student and biotech instructor</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Singularity University (SU) is a technology entrepreneurship program at Nasa Ames founded by Ray Kurzweil and Peter Diamandis. Based on the idea of exponentials changing the face of technology, and the world, the summer global solutions
+                        program focuses students on global grand challenges that effect a billion or more people. In my first year there, I attended as a student and led the construction efforts on a project to develop aeroponic vegetable growth chambers.
+                        In subsequent summers I have attended as a biotechnology instructor and led students through DNA transformations, human genetic testing, DNA species barcoding, and the development of many fascinating group project ideas. Now directly
+                        supported by Google, the network of SU graduates and sponsors is a window into the heart of silicon valley and an ideal marriage of technology and business. <a target="_blank" href="http://singularityu.org/">Singularity University</a></p>
+                    <p> It was also at Singularity University that I met Raymond McCauley and the other folks at <a target="_blank" href="http://biocurious.org/">BioCurious</a>, a biology-focused hackerspace in Sunnyvale. With the resources of silicon valley
+                        and its ability to dream big, BioCurious has been an example to aspire to in the development of Makerspace. I helped them initially create their lab, and have also used the lab to teach the SU classes. It was also there that I
+                        led the lab portion of the 2012 FBI-organized DIY bio summit. This international gathering of community labs was the first time that the global scale of the community lab movement was realized.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="phd_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel9" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel9">PhD: neurofeedback on low-cost EEG devices</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Derek's PhD at the University of Victoria was co-supervised by both psychology and computer science. It focused on the use of <a target="_blank" href="https://dspace.library.uvic.ca/handle/1828/7510">consumer-grade electroencephalography (EEG) headsets for the diagnosis and treatment of attention deficit disorder</a>.
+                        These EEG headsets, costing several hundred dollars rather than the tens of thousands of dollars research grade equipment costs, were previously thought to be too unreliable for research use and were intended primarily for computer
+                        gaming and meditation training applications. Rather than their intended use of monitoring recurring frontal lobe activity, Derek used the equipment to detect stimulus-locked neural activity - specific brain responses to an on-screen
+                        stimulus. These event-related potentials (ERPs) are the basis of many psychological and neurological studies, and various clinical conditions exhibit systematic changes in the pattern or ERPs observed. In the particular case Derek
+                        was studying, an ERP called the P300 was observed to be attenuated in the case of attention deficit hyperactivity disorder (ADHD). Derek used noise reduction algorithms to reduce the impact of lower-quality headsets, and machine
+                        learning techniques to determine when P300 responses were observed. These responses were used to create a brain-controlled spelling package which was used as a form of neurofeedback. After multiple sessions of using the apparatus,
+                        the P300 responses were found to have strengthened in normal subject populations. It remains to be seen whether this holds true in ADHD populations and whether behavioral correlates of the altered brain responses can be determined.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="urthecast_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel10" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel10">Web developer at UrtheCast, VR development</h4>
+                </div>
+                <div class="modal-body">
+                    <p> As the PhD was winding down, Derek took a turn back towards user interface design in working with UrtheCast, a satellite imagery company, to produce a development console for writing python scripts to analyze earth imagery data. Hosted
+                        on Amazon Web Services (AWS) the web application uses React and ES6 and follows modern web development practices in an application framework which leverages parallel computing to run the imagery analyses in a map-reduce paradigm.
+                        Derek architected the technical direction and has been supervising students at UVic and coordinating with developers and remote sensing scientists at UrtheCast to release this development environment on the UrtheCast platform.</p>
+                    <p> Derek has also been working in the Unity development engine and has owned an Oculus virtual reality headset since the DK1 was released in 2013. Derek is co-organizer of the <a target="_blank" href="http://www.meetup.com/VVAR-Victoria-Virtual-Augmented-Reality/">Victoria Virtual and Augmented Reality Meetup</a>.
+                        With more hardware on the way, the Victoria Makerspace is home to a group of VR and AR enthusiasts in this rapidly growing development area.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sessional_Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel11" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel11">Sessional Instructor</h4>
+                </div>
+                <div class="modal-body">
+                    <p> Derek's teaching experience spans both institutional and non-institutional settings. He has developed and taught the third-year human-computer interaction course at UVic, SENG310. He has also developed curriculum and taught the first
+                        year CSC101 course which is the result of <a target="_blank" href="https://news.gov.bc.ca/releases/2016AVED0086-001678">funding by the provincial government for job creation</a>.</p>
+                    <p> At Makerspace, Derek has developed classes on the laser cutter and 3D printer, in the electronics area on the Arduino microcontroller, and has partnered with the <a target="_blank" href="https://www.stanwinstonschool.com/">Stan Winston School of Character Arts</a>                        to teach a class on Arduino-based animatronics for movie effects. Derek also teaches an introduction to microbiology, create your first genetically modified organism, and DNA barcoding in the biology lab at Makerspace, and teaches
+                        an introductory bioinformatics course designed to teach individuals how to interpret and work with their genetic data from providers such as <a target="_blank" href="https://www.23andme.com/">23andme</a>.</p>
+                    <p> At Singularity University, Derek teaches introductory lab courses and lectures on digital biology.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer
+        ======================================== -->
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+    <!-- Scripts
+        ======================================== -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- To collapse the Nav on the mobile view after a click -->
+    <script type="text/javascript">
+        $('.navbar-collapse a').click(function() {
+            if ($('nav').hasClass('in')) $('.navbar-collapse').collapse('toggle');
+        });
+    </script>
+    <!-- toTop function -->
+    <script>
+        $(document).ready(function() {
             // Async Load
             $.getScript("js/vendor/totop.js/totop.min.js")
-            .done(function(script, textStatus) {
-              console.log("ToTop loaded.");
-              $().totop();
-            })
-            .fail(function(jqxhr, settings, exception) {
-              console.log("ToTop load failed.");
-            });
-          });
-        </script>
-    </body>
+                .done(function(script, textStatus) {
+                    console.log("ToTop loaded.");
+                    $().totop();
+                })
+                .fail(function(jqxhr, settings, exception) {
+                    console.log("ToTop load failed.");
+                });
+        });
+    </script>
+</body>
+
 </html>
