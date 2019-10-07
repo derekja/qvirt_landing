@@ -154,7 +154,7 @@ grunt.loadNpmTasks('grunt-real-favicon');
     connect: {
       server: {
         options: {
-          port: 3000,
+          port: 8480,
           base: '.'
         }
       }

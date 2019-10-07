@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Design from here: http://prettystrap.com/themes/the-story/preview/ -->
-    <!-- Behavioral Meta Data -->
-    <!-- https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,20 +26,14 @@
     <meta name="twitter:image" content="http://qvirt.com/img/QVirt_Logo.svg">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans|Lato|Revalia">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700italic,900,400italic,300">
-    <!-- Favicon -->
-    <!-- Apple Touch Icons -->
-    <!-- !!!! These sizes are wrong -->
-    <!-- Apple Startup Images -->
-    <!--       <link rel="apple-touch-startup-image" href="apple-touch-startup-image-320x460.png" media="(device-width: 320px)">
-      <link rel="apple-touch-startup-image" href="apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
-      <link rel="apple-touch-startup-image" href="apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
-      <link rel="apple-touch-startup-image" href="apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
-      <link rel="apple-touch-startup-image" href="apple-touch-startup-image-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
-      <link rel="apple-touch-startup-image" href="apple-touch-startup-image-2048x1496.png" media="(device-width: 1536px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"> -->
+
     <!-- Google Analytics -->
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -77,17 +68,7 @@
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="70">
     <!-- Navigation
         ======================================== -->
-    <div id="searchDropdown" class="search-drop hidden">
-        <form action="/Guide/Search" method="get" class="ignoreCSRF">
-            <div class="header-container">
-                <span class="search-title">Search iFixit:</span>
-                <input type="text" name="query" id="searchForm" class="search-field" placeholder="Enter keywords" spellcheck="false">
-                <button class="search-submit" id="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
-                <i class="search-close search-toggle fa fa-times"></i>
-            </div>
-        </form>
-        <!-- <button type="button" class="close" aria-hidden="true">&times;</button> -->
-    </div>
+
     <header class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -120,17 +101,21 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                            <a href="http://qvirt.com/aitalk.html">AI talk</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Main Jumbotron
         ======================================== -->
     <div id="home" class="jumbotron">
         <div class="container">
             &nbsp;
             <h1>
-                We allow you to ask <span id="Q">Q</span>uestions in <span id="Q">Virt</span>ual reality using natural language and speech recognition!
+                Intelligent interactive technologies in Virtual Reality and data analytics
             </h1>
             <div class="row">
                 <div class="col-md-8 col-md-push-4">
@@ -152,29 +137,21 @@
     <!-- Hero
         ======================================== -->
     <!-- <div class="container"> -->
-    <div class="container" id="technology">
+    <div class="jumbotron" id="technology">
         &nbsp; &nbsp;
-        <h1> Our Technology </h1>
-    </div>
-    <div class="hero">
-        <div class="hero-inner">
-            <!-- hero image -->
-            <img class="hero-image" src="img/servers.png" alt="Data center">
-            <!-- hero content -->
-            <div class="hero-content">
-                <h2>
-                    Cloud-based interactivity
-                </h2>
-                <h3 class="wh">
-                    Speech recognition and natural language services, deep learning feature extraction, smart collaboration services are all cloud-based
-                </h3>
-                <h2> Rich client behaviours </h2>
-                <h3 class="wh">
-                    Unity game engine on the client enables head and hand tracking, presentation on multiple client platforms, and all the richness of a gaming application
-                </h3>
+        <h1> Technology </h1>
 
-            </div>
-        </div>
+        <h2>
+            Cloud-based interactivity
+        </h2>
+        <h3>
+            Speech recognition and natural language services, deep learning feature extraction, geospatial satellite anaytics, predictive modeling, and smart collaboration services are all cloud-based
+        </h3>
+        <h2> Rich client behaviours </h2>
+        <h3>
+            Unity game engine on the client enables head and hand tracking, presentation on multiple client platforms, and all the richness of a gaming application
+        </h3>
+
     </div>
     <!-- </div> -->
     <!-- Jumbotron
@@ -183,28 +160,18 @@
         <div class="container">
             &nbsp; &nbsp;
             <h1>
-                We keep adding projects!
+                Current Projects
             </h1>
             <p>
                 The underlying technology is applicable to so many uses. The gaming industry is producing tools to make user interfaces exciting and interactive, and the potential to apply these interfaces to scientific data sets, research collaborations, and social
                 environments are the dawn of a new age in human-computer interfaces.
             </p>
-            <p> Our current projects are listed below </p>
+            <p> One of our current projects is described more fully below: </p>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <a target="_blank" href="http://3data.ca">
-                        <h3 class="wh">3data.com, Virtual Worlds for Data Analysis</h3>
-                        <img class="img_logo" alt="vwda" src="/img/vwda.png" /></a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                     <a target="_blank" href="http://bcstories.ca">
-                        <h3 class="wh">BC Stories is a collaboration with the Royal BC Museum on educational VR experiences</h3>
+                        <h3 class="wh">BC Stories is a collaboration with the Royal BC Museum and Oceans Network Canada on educational VR experiences</h3>
                         <img class="img_logo" alt="BC Stories" src="/img/bcstories.png" /></a>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                    <a href="#makerslounge_Modal" data-toggle="modal" data-target="#makerslounge_Modal">
-                        <h3 class="wh">Maker's Lounge</h3>
-                        <img class="img_logo" alt="Microsoft Windows logo" src="/img/makerslounge.png" /></a>
                 </div>
             </div>
             &nbsp; &nbsp;
@@ -274,10 +241,10 @@
         <h2>
             <p><i class=""></i> Meet QVirt founder, Dr. Derek Jacoby<i class=""></i></p>
             <img src="img/derekja_oval3.png" alt="Derek Jacoby" height="100px" />
-            <p><small>Derek has experience in statistics, bioinformatics, data science, visualization, virtual reality, speech recognition, user experience, and building great teams </small></p>
-            <p><small>Click on a logo to explore Derek's background</small></p>
+            <p>Derek has experience in statistics, bioinformatics, data science, visualization, virtual reality, speech recognition, user experience, and building great teams</p>
+            <p>Click on a logo to explore Derek's background</p>
         </h2>
-        <div class="container marketing hidden-xs">
+        <div class="container marketing">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                     <a href="#MDAnderson_Modal" data-toggle="modal" data-target="#MDAnderson_Modal">
@@ -296,7 +263,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                     <a href="#msr_Modal" data-toggle="modal" data-target="#msr_Modal">
-                        <h3 class="wh">Speech recognition researcher</h3>
+                        <h3 class="wh">Speech recognition research Senior PM</h3>
                         <img class="img_logo" alt="Microsoft research logo" src="/img/msr.png" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
@@ -386,7 +353,7 @@
                 <h1>
                     So get in touch! <span class="text-muted">What do you want to do with a world re-imagined?</span>
                 </h1>
-                <p class="lead hidden-xs">
+                <p class="lead">
                     Email Derek directly at derekja@qvirt.com
                 </p>
             </div>
@@ -697,20 +664,7 @@
             if ($('nav').hasClass('in')) $('.navbar-collapse').collapse('toggle');
         });
     </script>
-    <!-- toTop function -->
-    <script>
-        $(document).ready(function() {
-            // Async Load
-            $.getScript("js/vendor/totop.js/totop.min.js")
-                .done(function(script, textStatus) {
-                    console.log("ToTop loaded.");
-                    $().totop();
-                })
-                .fail(function(jqxhr, settings, exception) {
-                    console.log("ToTop load failed.");
-                });
-        });
-    </script>
+
 </body>
 
 </html>
